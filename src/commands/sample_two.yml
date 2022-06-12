@@ -1,0 +1,12 @@
+description: >
+  Sample orbs.
+parameters:
+  sample_key_value:
+    type: string
+    default: sample_value
+    description: sample parameter
+steps:
+  - run:
+      name: Sample Two
+      command: |
+        echo "<<parameters.sample_key_value>>"

@@ -1,3 +1,6 @@
+description: >
+  Sample orbs.
+
 version: 2.1
 
 commands:

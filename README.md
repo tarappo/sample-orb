@@ -3,15 +3,9 @@
 
 [![CircleCI Build Status](https://circleci.com/gh/tarappo/sample-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/tarappo/sample-orb) [![CircleCI Orb Version](https://badges.circleci.com/orbs/tarappo/sample.svg)](https://circleci.com/orbs/registry/orb/tarappo/sample) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/tarappo/sample-orb/master/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
 
+## Reference
+https://circleci.com/docs/ja/2.0/orb-author
 
-
-A project template for Orbs.
-
-This repository is designed to be automatically ingested and modified by the CircleCI CLI's `orb init` command.
-
-_**Edit this area to include a custom title and description.**_
-
----
 
 ## Resources
 

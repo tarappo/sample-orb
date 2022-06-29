@@ -2,7 +2,8 @@ version: 2.1
 
 description: >
   CircleCI Orbs Sample List.
-  I make some sample orbs.
+  I make some sample orbs and documentations.
+  so maybe not to useful orb for production code.
 
 display:
   home_url: "https://github.com/tarappo"

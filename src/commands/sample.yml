@@ -1,11 +1,13 @@
 description: >
   Sample orbs.
 
-version: 2.1
-
-commands:
-  sample_command:
-    steps:
-      - run: echo sample orbs
-
-
+parameters:
+  sample_key_value:
+    type: string
+    default: sample_value
+    description: sample parameter
+steps:
+  - run:
+      name: Sample
+      command: |
+        echo "<<parameters.sample_key_value>>"

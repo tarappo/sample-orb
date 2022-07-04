@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo SAMPLE
-echo <<parameters.sample_key_value>>
+echo "<<parameters.sample_key_value>>"

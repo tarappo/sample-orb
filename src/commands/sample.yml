@@ -11,5 +11,6 @@ steps:
       name: Sample
       command: |
         echo "<<parameters.sample_key_value>>"
+  - run:
       name: Include File
       command: <<include(scripts/sample.sh)>>

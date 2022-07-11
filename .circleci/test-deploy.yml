@@ -22,12 +22,14 @@ jobs:
           command: echo ${SAMPLE_KEY_VALUE}
       - run:
           name: "env2"
-          command: echo $$SAMPLE_KEY_VALUE2
+          command: echo $SAMPLE_KEY_VALUE2
       - run:
           name: "env3"
           command: echo ${CIRCLE_BRANCH}
       - sample/sample:
-          sample_key_value: sample_values
+          sample_key_value: $SAMPLE_KEY_VALUE
+      - sample/sample:
+          sample_key_value: ${SAMPLE_KEY_VALUE2}
 workflows:
   test-deploy:
     jobs:

@@ -14,7 +14,7 @@ steps:
   - run:
       name: Include File
       environment:
-        SAMPLE_KEY_VALUE: echo "<<parameters.sample_key_value>>"
+        SAMPLE_KEY_VALUE: "<<parameters.sample_key_value>>"
       command: <<include(scripts/sample.sh)>>
   - run:
       name: Include File2

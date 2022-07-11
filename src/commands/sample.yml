@@ -16,3 +16,8 @@ steps:
       environment:
         SAMPLE_KEY_VALUE: "<<parameters.sample_key_value>>"
       command: <<include(scripts/sample.sh)>>
+  - run:
+      name: Include File2
+      environment:
+        SAMPLE_KEY_VALUE: "SAMPLE_SAMPLE"
+      command: <<include(scripts/sample.sh)>>

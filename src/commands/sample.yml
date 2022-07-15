@@ -12,6 +12,12 @@ steps:
       command: |
         echo "<<parameters.sample_key_value>>"
   - run:
+      name: Sample2
+      environment:
+        SAMPLE_KEY_VALUE: "<<parameters.sample_key_value>>"
+      command: |
+        echo $SAMPLE_KEY_VALUE
+  - run:
       name: Include File
       environment:
         SAMPLE_KEY_VALUE: "<<parameters.sample_key_value>>"

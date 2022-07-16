@@ -3,8 +3,7 @@ description: >
 
 parameters:
   sample_key_value:
-    type: string
-    default: sample_value
+    type: env_var_name
     description: sample parameter
 steps:
   - run:

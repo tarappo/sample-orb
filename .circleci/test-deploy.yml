@@ -27,7 +27,7 @@ jobs:
           name: "env3"
           command: echo ${CIRCLE_BRANCH}
       - sample/sample:
-          sample_key_value: ${SAMPLE_KEY_VALUE2}
+          sample_key_value: SAMPLE_KEY_VALUE2
 workflows:
   test-deploy:
     jobs:

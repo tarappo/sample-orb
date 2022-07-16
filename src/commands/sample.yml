@@ -14,7 +14,7 @@ steps:
   - run:
       name: Sample2
       environment:
-        SAMPLE_KEY_VALUE: "<<parameters.sample_key_value>>"
+        SAMPLE_KEY_VALUE: <<parameters.sample_key_value>>
       command: |
         echo $SAMPLE_KEY_VALUE
         echo $SAMPLE_KEY_VALUE2
@@ -28,7 +28,7 @@ steps:
   - run:
       name: Include File
       environment:
-        SAMPLE_KEY_VALUE: "<<parameters.sample_key_value>>"
+        SAMPLE_KEY_VALUE: <<parameters.sample_key_value>>
       command: <<include(scripts/sample.sh)>>
   - run:
       name: Include File2

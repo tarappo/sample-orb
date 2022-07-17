@@ -23,7 +23,7 @@ jobs:
       - run:
           name: "env2"
           command: |
-            export SAMPLE_KEY_VALUE_CHANGE=${SAMPLE_KEY_VALUE}
+            export SAMPLE_KEY_VALUE_CHANGE=${SAMPLE_KEY_VALUE} >> $BASH_ENV
             echo $SAMPLE_KEY_VALUE_CHANGE
       - sample/sample:
           sample_key_value: SAMPLE_KEY_VALUE2

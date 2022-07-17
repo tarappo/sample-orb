@@ -18,13 +18,6 @@ steps:
         echo $SAMPLE_KEY_VALUE
         echo $SAMPLE_KEY_VALUE2
   - run:
-      name: Sample3
-      environment:
-        SAMPLE_KEY_VALUE3: HELLO HELLO
-      command: |
-        echo $SAMPLE_KEY_VALUE2
-        echo $SAMPLE_KEY_VALUE3
-  - run:
       name: Include File
       environment:
         SAMPLE_KEY_VALUE: <<parameters.sample_key_value>>

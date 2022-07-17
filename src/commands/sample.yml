@@ -9,7 +9,7 @@ steps:
   - run:
       name: Sample
       command: |
-        echo "<<parameters.sample_key_value>>"
+        echo ${<< parameters.sample_key_value >>}
   - run:
       name: Sample2
       environment:

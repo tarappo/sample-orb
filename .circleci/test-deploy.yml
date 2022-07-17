@@ -22,7 +22,7 @@ jobs:
           command: echo ${SAMPLE_KEY_VALUE}
       - run:
           name: "env2"
-          command: echo $SAMPLE_KEY_VALUE2
+          command: export SAMPLE_KEY_VALUE_CHANGE=${SAMPLE_KEY_VALUE}
       - sample/sample:
           sample_key_value: SAMPLE_KEY_VALUE2
       - sample/sample:

@@ -24,8 +24,6 @@ jobs:
           name: "env2"
           command: export SAMPLE_KEY_VALUE_CHANGE=${SAMPLE_KEY_VALUE}
       - sample/sample:
-          environment:
-            SAMPLE_KEY_VALUE_CHANGE2: ${SAMPLE_KEY_VALUE}
           sample_key_value: SAMPLE_KEY_VALUE2
 workflows:
   test-deploy:

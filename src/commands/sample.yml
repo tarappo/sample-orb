@@ -5,6 +5,10 @@ parameters:
   sample_key_value:
     type: env_var_name
     description: sample parameter
+  sample_value:
+    type: string
+    description: sample parameter
+    default: test
 steps:
   - run:
       name: Sample
@@ -18,10 +22,11 @@ steps:
         echo $SAMPLE_KEY_VALUE
         echo $SAMPLE_KEY_VALUE_TEST
   - run:
+      name: Setup
+      command: |
+        echo "export SAMPLE_KEY_VALUE_CHANGE2=<< parameters.sample_value >>" >> $BASH_ENV
+  - run:
       name: Include File
-      environment:
-        SAMPLE_KEY_VALUE_CHANGE2: ${SAMPLE_KEY_VALUE}
-        SAMPLE_KEY_VALUE: ${<< parameters.sample_key_value >>}
       command: <<include(scripts/sample.sh)>>
   - run:
       name: Include File2

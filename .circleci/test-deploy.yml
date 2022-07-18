@@ -27,7 +27,7 @@ jobs:
             echo $SAMPLE_KEY_VALUE_CHANGE
       - sample/sample:
           sample_key_value: SAMPLE_KEY_VALUE2
-          sample_value: ${SAMPLE_KEY_VALUE}
+          sample: ${SAMPLE_KEY_VALUE}
 workflows:
   test-deploy:
     jobs:

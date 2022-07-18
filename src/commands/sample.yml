@@ -22,7 +22,7 @@ steps:
         echo $SAMPLE_KEY_VALUE
         echo $SAMPLE_KEY_VALUE_TEST
   - run:
-      name: Setup
+      name: Setup Environment
       command: |
         echo "export SAMPLE_KEY_VALUE_CHANGE2=<< parameters.sample_value >>" >> $BASH_ENV
   - run:

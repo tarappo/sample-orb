@@ -25,9 +25,10 @@ steps:
       name: Setup Environment
       command: |
         echo "export CHANGE2=<< parameters.sample >>" >> $BASH_ENV
-        echo "export CHANGE2=<< parameters.sample >>" >> $BASH_ENV
   - run:
       name: Include File
+      environment:
+        SAMPLE_KEY_VALUE: << parameters.sample >>
       command: <<include(scripts/sample.sh)>>
   - run:
       name: Include File2

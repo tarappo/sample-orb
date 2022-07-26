@@ -8,6 +8,7 @@ parameters:
   sample:
     type: string
     description: sample parameter
+    default:
 steps:
   - run:
       name: Sample
@@ -23,6 +24,7 @@ steps:
   - run:
       name: Setup Environment
       command: |
+        echo "export CHANGE2=<< parameters.sample >>" >> $BASH_ENV
         echo "export CHANGE2=<< parameters.sample >>" >> $BASH_ENV
   - run:
       name: Include File
